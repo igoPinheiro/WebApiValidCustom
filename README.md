@@ -3,10 +3,12 @@
 
 
 #Exemplo De Validação Customizada 
+```
 [EmailInUse]
 [BlockDomain("gmail.com")] 
+```
 
-
+```
 public class CreateUserModel
 {
     [Required(ErrorMessage ="O usuário é obrigatório")]
@@ -52,3 +54,4 @@ public class BlockDomainAttribute : ValidationAttribute
             : ValidationResult.Success;
     }
 }
+```
